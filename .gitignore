@@ -1,2 +1,4 @@
 *-cache.lib
 *.bak
+*.log
+__pycache__
