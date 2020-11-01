@@ -1,0 +1,166 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L HomeProjects:SEEEDUINO_XIAO U?
+U 1 1 5F982E11
+P 6650 3100
+F 0 "U?" H 7150 3550 50  0000 C CNN
+F 1 "SEEEDUINO_XIAO" H 6200 3550 50  0000 C CNN
+F 2 "" H 6450 3250 50  0001 C CNN
+F 3 "" H 6450 3250 50  0001 C CNN
+	1    6650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F982EEC
+P 3250 2950
+F 0 "R?" H 3320 2996 50  0000 L CNN
+F 1 "200" H 3320 2905 50  0000 L CNN
+F 2 "" V 3180 2950 50  0001 C CNN
+F 3 "~" H 3250 2950 50  0001 C CNN
+	1    3250 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F982FBE
+P 3750 2950
+F 0 "R?" H 3820 2996 50  0000 L CNN
+F 1 "10K" H 3820 2905 50  0000 L CNN
+F 2 "" V 3680 2950 50  0001 C CNN
+F 3 "~" H 3750 2950 50  0001 C CNN
+	1    3750 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L HomeProjects:RPI-441C1E U?
+U 1 1 5F9A4916
+P 3500 1950
+F 0 "U?" H 3878 1921 50  0000 L CNN
+F 1 "RPI-441C1E" H 3878 1830 50  0000 L CNN
+F 2 "" H 3400 1950 50  0001 C CNN
+F 3 "" H 3400 1950 50  0001 C CNN
+	1    3500 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2800 3250 2400
+Wire Wire Line
+	3250 1650 3250 1450
+Wire Wire Line
+	3250 1450 3750 1450
+Wire Wire Line
+	3750 1450 3750 1650
+Wire Wire Line
+	3750 1300 3750 1450
+Connection ~ 3750 1450
+Wire Wire Line
+	7350 2850 7550 2850
+Wire Wire Line
+	7550 2850 7550 2600
+Wire Wire Line
+	6650 2600 6650 2400
+$Comp
+L power:+5V #PWR?
+U 1 1 5F9A4EDD
+P 6650 2400
+F 0 "#PWR?" H 6650 2250 50  0001 C CNN
+F 1 "+5V" H 6665 2573 50  0000 C CNN
+F 2 "" H 6650 2400 50  0001 C CNN
+F 3 "" H 6650 2400 50  0001 C CNN
+	1    6650 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F9A4F2C
+P 3750 1300
+F 0 "#PWR?" H 3750 1150 50  0001 C CNN
+F 1 "+3V3" H 3765 1473 50  0000 C CNN
+F 2 "" H 3750 1300 50  0001 C CNN
+F 3 "" H 3750 1300 50  0001 C CNN
+	1    3750 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F9A4F86
+P 7550 2600
+F 0 "#PWR?" H 7550 2450 50  0001 C CNN
+F 1 "+3V3" H 7565 2773 50  0000 C CNN
+F 2 "" H 7550 2600 50  0001 C CNN
+F 3 "" H 7550 2600 50  0001 C CNN
+	1    7550 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F9A4FDD
+P 6650 3750
+F 0 "#PWR?" H 6650 3500 50  0001 C CNN
+F 1 "GND" H 6655 3577 50  0000 C CNN
+F 2 "" H 6650 3750 50  0001 C CNN
+F 3 "" H 6650 3750 50  0001 C CNN
+	1    6650 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3750 6650 3600
+Wire Wire Line
+	3250 3100 3250 3350
+Wire Wire Line
+	3250 3350 3750 3350
+Wire Wire Line
+	3750 3350 3750 3100
+Wire Wire Line
+	3750 3350 3750 3550
+Connection ~ 3750 3350
+$Comp
+L power:GND #PWR?
+U 1 1 5F9A53C0
+P 3750 3550
+F 0 "#PWR?" H 3750 3300 50  0001 C CNN
+F 1 "GND" H 3755 3377 50  0000 C CNN
+F 2 "" H 3750 3550 50  0001 C CNN
+F 3 "" H 3750 3550 50  0001 C CNN
+	1    3750 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2400 3750 2700
+Wire Wire Line
+	3750 2700 5500 2700
+Wire Wire Line
+	5500 2700 5500 2950
+Wire Wire Line
+	5500 2950 5950 2950
+Connection ~ 3750 2700
+Wire Wire Line
+	3750 2700 3750 2800
+Text Notes 3200 1600 1    50   ~ 0
+red
+Text Notes 3200 2650 1    50   ~ 0
+black
+Text Notes 3850 1650 1    50   ~ 0
+white
+Text Notes 3700 2700 1    50   ~ 0
+orange
+Text Notes 3150 3250 1    50   ~ 0
+IF=9mA
+Text Notes 3650 3250 1    50   ~ 0
+IC=400uA
+$EndSCHEMATC
